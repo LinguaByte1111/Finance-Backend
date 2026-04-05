@@ -10,6 +10,7 @@ A backend system for managing financial records with role-based access control, 
 - **Password Hashing:** Bcrypt
 
 ## Project Structure
+```
 finance-backend/
 ├── main.py              # App entry point
 ├── database.py          # DB connection setup
@@ -31,8 +32,9 @@ finance-backend/
 │   └── admin.py
 ├── services/            # Business logic
 └── middleware/          # Auth and error handling
-├── auth_middleware.py
-└── error_handler.py
+    ├── auth_middleware.py
+    └── error_handler.py
+```
 
 ## Setup Instructions
 
