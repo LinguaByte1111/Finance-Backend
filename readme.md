@@ -11,15 +11,28 @@ A backend system for managing financial records with role-based access control, 
 
 ## Project Structure
 finance-backend/
-├── main.py                  # App entry point
-├── database.py              # DB connection setup
-├── requirements.txt         # All libraries
-├── README.md                # Documentation
-├── models/                  # Database tables
-├── schemas/                 # Input/Output formats
-├── routers/                 # API routes
-├── services/                # Business logic
-└── middleware/              # Auth and error handling
+├── main.py              # App entry point
+├── database.py          # DB connection setup
+├── requirements.txt     # All libraries
+├── README.md            # Documentation
+├── models/              # Database tables
+│   ├── user.py
+│   ├── financial_record.py
+│   └── role_request.py
+├── schemas/             # Input/Output formats
+│   ├── user.py
+│   ├── financial_record.py
+│   └── role_request.py
+├── routers/             # API routes
+│   ├── auth.py
+│   ├── users.py
+│   ├── records.py
+│   ├── dashboard.py
+│   └── admin.py
+├── services/            # Business logic
+└── middleware/          # Auth and error handling
+├── auth_middleware.py
+└── error_handler.py
 
 ## Setup Instructions
 
